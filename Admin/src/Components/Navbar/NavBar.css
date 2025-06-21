@@ -1,0 +1,17 @@
+.navbar .logo {
+    width: 250px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.profile {
+    max-width: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 4%;
+    margin-left: 5px;
+}

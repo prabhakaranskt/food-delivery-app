@@ -1,0 +1,37 @@
+.list {
+  padding: 20px 20px;
+}
+
+.image img {
+  width: 50px;
+  object-fit: cover;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.list-table th {
+  background-color: #f4f4f4;
+}
+
+.list-table th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.list-table th {
+  padding: 10px;
+}
+
+.list-table td {
+  padding: 8px 70px;
+  font-size: 15px;
+}
+
+.cursor {
+  cursor: pointer;
+}

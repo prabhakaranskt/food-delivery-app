@@ -1,0 +1,154 @@
+.top-dish-wrapper h2 {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: var(--h2);
+}
+.top-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+  padding: 0 40px;
+}
+.show-all {
+  display: flex;
+}
+.show-all-btn {
+  padding: 10px 20px;
+  background-color: #fa4b0c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.top-dishes-box {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top-dishes-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s;
+  margin-bottom: 10px;
+}
+
+.top-dishes-box img:hover {
+  transform: scale(0.9);
+}
+
+.top-dishes-box h4 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+.rate-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.rate-time i {
+  color: #333;
+  margin-bottom: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+.rate-time p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.add-btn {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.adding {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: #fa4b0c;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.adding:hover {
+  background-color: rgb(255, 246, 246);
+}
+
+.price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.price-add i {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.counter {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fa4b0c;
+  outline: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.counter button {
+  border: none;
+  background-color: transparent;
+  color: #fa4b0c;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.counter span {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.load-more-wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.load-more-button {
+  padding: 10px 20px;
+  background-color: #fa4b0c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.load-more-button:hover {
+  background-color: #717070;
+}

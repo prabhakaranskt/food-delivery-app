@@ -1,0 +1,52 @@
+.orders-page {
+  padding: 2rem;
+  margin: 20px;
+}
+
+.orders-page h2 {
+  font-size: 1.5rem;
+  color: #fa4b0c;
+}
+.name-qty {
+  font-weight: 600;
+}
+.order-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f4f4f4;
+  margin: 1rem;
+  gap: 80px;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.order-card strong {
+  font-weight: 500;
+}
+
+.order-card img {
+  width: 50px;
+  object-fit: cover;
+  height: auto;
+}
+
+.status-dot {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-dot i {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.order-card p {
+  text-align: center;
+}
+
+.no-orders {
+  text-align: center;
+}

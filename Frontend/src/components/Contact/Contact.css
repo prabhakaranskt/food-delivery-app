@@ -1,0 +1,32 @@
+.contact-wrapper {
+  display: flex;
+  background-color: #eaeaec;
+  padding: 50px;
+  gap: 130px;
+  border-radius: 20px;
+  margin: 25px;
+}
+.contact-img img {
+  width: 200px;
+  height: 50px;
+  object-fit: cover;
+}
+.contact-us,
+.company,
+.life {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact-wrapper li:hover {
+  color: #fa4b0c;
+}
+.download-store {
+  display: flex;
+  margin: 30px;
+}
+.download-store img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+}

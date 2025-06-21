@@ -1,0 +1,167 @@
+.cart {
+    padding: 20px 20px;
+}
+
+.your-clear-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+
+.your-clear-cart button {
+    color: #fa4b0c;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+}
+
+.cart-img {
+    width: 50px;
+    object-fit: cover;
+    align-items: center;
+    height: 50px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.img-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-table th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-counter button {
+    border: none;
+    background-color: #fff;
+    color: #fa4b0c;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.total i,
+.price i {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #333;
+}
+
+.empty-cart {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.empty-cart-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.add-btn-on-cart {
+    padding: 10px 20px;
+    background-color: #fa4b0c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subtotal,
+.delivery-fee,
+.total-to {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    gap: 100px;
+}
+
+.total-to {
+    gap: 130px;
+}
+
+.subtotal i {
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #333;
+}
+
+.delivery-fee i {
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #333;
+}
+
+.total-to i {
+    font-size: 13px;
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.subtotal,
+.delivery-fee,
+.total-to p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.total-to p {
+    font-weight: 700;
+}
+
+.cart-details h3 {
+    margin: 10px 10px 10px 0;
+}
+
+.checkout-btn {
+    background-color: #fa4b0c;
+    border-radius: 10px;
+    color: #f4f4f4;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-variant-caps: all-petite-caps;
+    cursor: pointer;
+}

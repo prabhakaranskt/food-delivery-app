@@ -1,0 +1,71 @@
+.place-order {
+  margin-left: 20px;
+}
+/* .place-order h1{
+    margin-left: 20px;
+  } */
+.combine-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.input-items {
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+
+    
+}
+.cart-details {
+    margin: 20px;
+    padding: 10px;
+}
+.cart-details h3 {
+    margin-left: 10px;
+}
+.input-items input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.email,
+.street,
+.number {
+    width: 453.5px;
+}
+
+.error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+  }
+  
+.city-state {
+    display: flex;
+    justify-content:flex-start ;
+    width:fit-content;
+   
+}
+.delivery-fee {
+    display: flex;
+    text-align: start;
+    gap: 80px;
+   
+}
+.pincode-country{
+    display: flex;
+}
+.names {
+    display: flex;
+}
+.firstname,
+.lastname,
+.pinCode,
+.country,
+.city,
+.state {
+    display: flex;
+    flex-direction: column;
+}
+

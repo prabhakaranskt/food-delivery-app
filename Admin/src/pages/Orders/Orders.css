@@ -1,0 +1,35 @@
+.admin-orders {
+  padding: 2rem;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  margin: 5px;
+  gap: 30px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.order-card select {
+  margin-left: 1rem;
+  padding: 0.3rem;
+  background-color: #f847065c;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+.order-card li {
+  list-style: none;
+  /* color: #ed3d0d; */
+  font-weight: 600;
+}
+.amount,
+.payment {
+  margin-bottom: 20px;
+}

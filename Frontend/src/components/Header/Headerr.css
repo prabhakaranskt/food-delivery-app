@@ -1,0 +1,156 @@
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 20px 0px 20px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  min-height: 500px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hot-dog {
+  max-width: 250px;
+  height: auto;
+  transform: translate(315%, -90%);
+  overflow: hidden;
+}
+
+.home-quote {
+  flex: 1;
+  max-width: 600px;
+  transform: translateX(-85%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.a {
+  font-size: 120px;
+  color: #fa4b0c;
+}
+
+.aromatic,
+.authentic,
+.always {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(50%, -431%);
+}
+.always {
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  transform: translate(52%, -420%);
+}
+
+.always .deli-color {
+  color: #fa4b0c;
+}
+
+.description {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  transform: translateY(-110%);
+  width: 60%;
+}
+
+.explore-now {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: #fa4b0c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transform: translateY(-250%);
+}
+
+/* .choose-us {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  } */
+
+/* .bike, .dine-in, .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  } */
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+  .header {
+    height: 70vh;
+    object-fit: contain;
+    border-radius: 0px;
+  }
+  .home-quote {
+    max-width: 100px;
+    transform: translateX(9%);
+  }
+
+  .a {
+    font-size: 90px;
+    color: #fa4b0c;
+    transform: translate(-30px, -180px);
+  }
+
+  .aromatic {
+    font-size: 15px;
+    transform: translate(22px, -285px);
+  }
+  .authentic {
+    font-size: 15px;
+    transform: translate(29px, -285px);
+  }
+  .always {
+    font-size: 15px;
+    transform: translate(39px, -280px);
+  }
+
+  .deli-color {
+    color: #fa4b0c;
+  }
+
+  .description {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1;
+    transform: translate(-20px, -280px);
+    width: 100%;
+  }
+
+  .explore-now {
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #fa4b0c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(0, 200%);
+  }
+}
