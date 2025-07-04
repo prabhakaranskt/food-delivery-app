@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import Header from "../../components/Header/Header";
 import ExploreMenu from "../../components/explore-menu/ExploreMenu";
-import TopDishes from "../../components/TopDishes/Topdishes";
+import TopDishes from "../../components/TopDishes/TopDishes";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "../../components/navBar/Navbar";
 import Contact from "../../components/Contact/Contact";
