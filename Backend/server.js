@@ -11,6 +11,8 @@ import orderRouter from "./routes/orderRoute.js";
 import webRouter from "./routes/webHookRoute.js";
 //app config
 
+dotenv.config();
+
 const app = express();
 const port = process.env.PORT || 4000;
 
