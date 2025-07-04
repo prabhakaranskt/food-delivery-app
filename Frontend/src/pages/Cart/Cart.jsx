@@ -3,13 +3,12 @@ import "./Cart.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
-import { assets } from "../../assets/assets";
+import { assets } from "/Github Projects/food-delivery-app/Frontend/src/assets"
 import Navbar from "../../components/navBar/Navbar";
 
-const Cart = ({ cartItems, setCartItems, subTotal, token }) => {
+const Cart = ({ cartItems, setCartItems, subTotal, token,url }) => {
   const navigate = useNavigate();
 
-  const url = "http://localhost:4000";
 
   const handleAddNow = () => {
     navigate("/home", { state: { scrollTo: "explore" } });

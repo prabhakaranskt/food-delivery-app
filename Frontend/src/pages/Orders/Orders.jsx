@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Orders.css";
-import { assets } from "../../assets/assets";
+import { assets } from "/Github Projects/food-delivery-app/Frontend/src/assets"
 import Navbar from "../../components/navBar/Navbar";
 
-const Orders = ({ token }) => {
+const Orders = ({ token ,url}) => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     const fetchOrders = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:4000/api/order/userOrders",
+          `${url}/api/order/userOrders`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

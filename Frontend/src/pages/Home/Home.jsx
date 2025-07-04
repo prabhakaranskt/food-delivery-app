@@ -13,6 +13,7 @@ const Home = ({
   decrement,
   token,
   cartItems,
+  url,
 }) => {
   const exploreMenuRef = useRef(null);
   const location = useLocation();
@@ -42,6 +43,7 @@ const Home = ({
         decrement={decrement}
         token={token}
         cartItems={cartItems}
+        url={url}
       />
       <Contact />
     </div>

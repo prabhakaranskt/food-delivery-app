@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./TopDishes.css";
 import axios from "axios";
 
-const TopDishes = ({ setCartItems, cartItems, category, token }) => {
-  const url = "http://localhost:4000";
+const TopDishes = ({ setCartItems, cartItems, category, token ,url}) => {
   const [dishImage, setDishImage] = useState([]);
   const userId = localStorage.getItem("userId");
 

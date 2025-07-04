@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-const Login = ({ setIsLoggedIn }) => {
+const Login = ({ setIsLoggedIn ,url}) => {
     const containerRef = useRef(null);
     const loginEmailRef = useRef(null);
     const loginPassRef = useRef(null);
@@ -44,7 +44,7 @@ const Login = ({ setIsLoggedIn }) => {
             return;
         }
 
-        const res = await fetch("http://localhost:4000/api/user/register", {
+        const res = await fetch(`${url}/api/user/register`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name: userName, email, password: passWord }),
@@ -83,7 +83,7 @@ const Login = ({ setIsLoggedIn }) => {
             return;
         }
 
-        const res = await fetch("http://localhost:4000/api/user/login", {
+        const res = await fetch(`${url}/api/user/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password: passWord }),

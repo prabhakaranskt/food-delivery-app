@@ -3,7 +3,7 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
 
-const VerifyPage = () => {
+const VerifyPage = ({url}) => {
   const [searchParams] = useSearchParams();
   const [message, setMessage] = useState("Verifying payment...");
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const VerifyPage = () => {
         if (success === "true" && orderId && sessionId) {
 
           const res = await axios.get(
-            `http://localhost:4000/api/stripe/check-session/${sessionId}`
+            `${url}/api/stripe/check-session/${sessionId}`
           );
 
           if (res.data?.paid === true) {

@@ -16,7 +16,7 @@ import { ToastContainer } from "react-toastify";
 import VerifyPage from "./pages/Cart/VerifyPage";
 
 const App = () => {
-  const url = "http://localhost:4000";
+  const url = import.meta.env.BACKEND_API_URL || "http://localhost:4000";
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [dishList, setDishList] = useState([]);
@@ -122,6 +122,7 @@ const App = () => {
               setCartItems={setCartItems}
               token={token}
               cartItems={cartItems}
+              url={url}
             />
           }
         />
@@ -133,6 +134,7 @@ const App = () => {
               setCartItems={setCartItems}
               subTotal={subTotal}
               token={token}
+              url={url}
             />
           }
         />
@@ -147,7 +149,7 @@ const App = () => {
             />
           }
         />
-        <Route path="/orders" element={<Orders token={token} />} />
+        <Route path="/orders" element={<Orders token={token} url={url} />} />
         <Route
           path="/login"
           element={
@@ -155,11 +157,12 @@ const App = () => {
               setUserToken={setUserToken}
               isLoggedIn={isLoggedIn}
               setIsLoggedIn={setIsLoggedIn}
+              url={url}
             />
           }
         />
         <Route path="/landingPage" element={<LandingPage />} />
-        <Route path="/verify" element={<VerifyPage />} />
+        <Route path="/verify" element={<VerifyPage url={url}/>} />
       </Routes>
       <ToastContainer />
     </div>
