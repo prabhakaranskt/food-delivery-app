@@ -13,7 +13,7 @@ const TopDishes = ({ setCartItems, cartItems, category, token ,url}) => {
   const [visibleDishes, setVisibleDishes] = useState([]);
 
   const fetchFoodList = async () => {
-    const response = await axios
+     await axios
       .get(`${url}/api/food/list`)
       .then((res) => {
         setDishImage(res.data.data);

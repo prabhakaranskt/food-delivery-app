@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./PlaceOrder.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../../components/navBar/Navbar";
 
@@ -18,7 +18,7 @@ const PlaceOrder = ({ cartItems, subTotal, url, token }) => {
   });
 
   const [errors, setErrors] = useState({});
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,7 +49,7 @@ const PlaceOrder = ({ cartItems, subTotal, url, token }) => {
     if (!validate()) return;
 
     const fullName = `${data.firstName} ${data.lastName}`;
-    const fullAddress = `${data.street}, ${data.city}, ${data.state}, ${data.pinCode}, ${data.country}`;
+    // const fullAddress = `${data.street}, ${data.city}, ${data.state}, ${data.pinCode}, ${data.country}`;
 
     try {
       const userId = JSON.parse(localStorage.getItem("user"));
