@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Orders.css";
-import { assets } from "//Github Projects/food-delivery-app/Frontend/src/assets";
+import { assets } from "//GithubProjects/food-delivery-app/Frontend/src/assets";
 import Navbar from "../../components/navBar/Navbar";
 
 const Orders = ({ token ,url}) => {

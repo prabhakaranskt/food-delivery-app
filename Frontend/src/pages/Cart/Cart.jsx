@@ -3,7 +3,7 @@ import "./Cart.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
-import { assets } from "/Github Projects/food-delivery-app/Frontend/src/assets/assets"
+import { assets } from "/GithubProjects/food-delivery-app/Frontend/src/assets/assets"
 import Navbar from "../../components/navBar/Navbar";
 
 const Cart = ({ cartItems, setCartItems, subTotal, token,url }) => {
