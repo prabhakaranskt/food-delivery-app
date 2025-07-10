@@ -8,9 +8,9 @@ export default defineConfig({
   server: {
     host: true
   },
-   build: {
-    rollupOptions: {
-      external: ['fs']
-    }
-  }
+  //  build: {
+  //   rollupOptions: {
+  //     external: ['fs']
+  //   }
+  // }
 })
