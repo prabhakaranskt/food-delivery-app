@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Cart from "./pages/Cart/Cart";
-import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
+import PlaceOrder from "./pages/tempFolder/";
 import Orders from "./pages/Orders/Orders";
 import Login from "./pages/loginAndRegister/Login";
 import { Navigate } from "react-router-dom";
