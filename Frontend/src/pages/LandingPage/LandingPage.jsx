@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
-import { assets } from "/GithubProjects/food-delivery-app/Frontend/src/assets/assets";
+import { assets } from "../../assets/assets";
 const LandingPage = () => {
   const imgRef = useRef(null);
 
