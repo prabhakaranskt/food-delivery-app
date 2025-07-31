@@ -14,7 +14,7 @@ import { ToastContainer } from "react-toastify";
 import VerifyPage from "./pages/Cart/VerifyPage";
 
 const App = () => {
-  const url = import.meta.env.BACKEND_API_URL || "http://localhost:4000";
+  const url = import.meta.env.BACKEND_API_URL ;
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [dishList, setDishList] = useState([]);
