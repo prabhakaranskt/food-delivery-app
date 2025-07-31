@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [  process.env.CLIENT_URL || "https://food-delivery-app-77se.vercel.app/",   // Client React app
-      process.env.ADMIN_URL || "http://localhost:3000"     // Admin React app
+      process.env.ADMIN_URL || "https://food-delivery-app-admin-swart.vercel.app/"     // Admin React app
       ],
     credentials: true,
   })
