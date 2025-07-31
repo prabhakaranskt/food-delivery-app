@@ -87,7 +87,7 @@ const Login = ({ setIsLoggedIn ,url}) => {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password: passWord }),
-        });
+        }).;
 
         const data = await res.json();
         if (data.success) {
