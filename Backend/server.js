@@ -19,7 +19,7 @@ const port = process.env.PORT || 4000;
 app.use(express.json());
 app.use(
   cors({
-    origin: [  process.env.CLIENT_URL || "http://localhost:5173",   // Client React app
+    origin: [  process.env.CLIENT_URL || "https://food-delivery-app-77se.vercel.app/",   // Client React app
       process.env.ADMIN_URL || "http://localhost:3000"     // Admin React app
       ],
     credentials: true,
